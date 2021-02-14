@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'audiowide';
+
+    src: url('../fonts/Audiowide-Regular.ttf') format('truetype');
+}
+
+.audiowide {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'audiowide';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*Cor cinza*/
+.cinza {
+    background-color: #33444c;
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+/*Mensagem de aviso*/
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.amarelo {
+    color: #0099d4;
+}
+.vermelho{
+    color: red;
+}
+.verde{
+    color: green;
+}
+a:link
+{
+    text-decoration:none;
+}
+
+/*Botão interativo piscar*/
+.pisca {
+    background-color: #33444c;
+    color: #fff;
+    font-weight: bold;
+}
+@-webkit-keyframes glowing {
+    0% { background-color: #460804; -webkit-box-shadow: 0 0 3px #460804; }
+    50% { background-color: #33444c; -webkit-box-shadow: 0 0 3px #33444c }
+    100% { background-color: #460804; -webkit-box-shadow: 0 0 3px #460804; }
+}
+
+@-moz-keyframes glowing {
+    0% { background-color: #460804; -moz-box-shadow: 0 0 3px #460804; }
+    50% { background-color: #33444c; -moz-box-shadow: 0 0 3px #460804; }
+    100% { background-color: #460804; -moz-box-shadow: 0 0 3px #460804; }
+}
+
+@-o-keyframes glowing {
+    0% { background-color: #460804; box-shadow: 0 0 3px #460804; }
+    50% { background-color: #33444c; box-shadow: 0 0 3px #33444c; }
+    100% { background-color: #33444c; box-shadow: 0 0 3px #33444c; }
+}
+
+@keyframes glowing {
+    0% { background-color: #460804; box-shadow: 0 0 3px #460804; }
+    50% { background-color: #33444c; box-shadow: 0 0 3px #33444c; }
+    100% { background-color: #460804; box-shadow: 0 0 3px #460804; }
+}
+
+.pisca {
+    -webkit-animation: glowing 1500ms infinite !important;
+    -moz-animation: glowing 1500ms infinite !important;
+    -o-animation: glowing 1500ms infinite !important;
+    animation: glowing 1500ms infinite !important;
+}
