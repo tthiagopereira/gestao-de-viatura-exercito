@@ -10,7 +10,7 @@ Sistema feito em PHP usando framework Laravel, Bootstrap, Jquery, usando o banco
 
 ### Instalation in 5 steps
 ```bash
-git clone https://github.com/tthiagopereira/parca-sistema-pedido-viatura.git
+git clone https://github.com/tthiagopereira/gestao-de-viatura-exercito.git
 cd parca
 composer install
 cp .env.example .env
