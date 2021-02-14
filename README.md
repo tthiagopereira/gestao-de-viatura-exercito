@@ -12,7 +12,6 @@ Sistema feito em PHP usando framework Laravel, Bootstrap, Jquery, usando o banco
 ```bash
 git clone https://github.com/tthiagopereira/gestao-de-viatura-exercito.git
 cd parca
-composer install
 cp .env.example .env
 php artisan key:generate
 ```
